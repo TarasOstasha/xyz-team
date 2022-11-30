@@ -1,0 +1,11 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Find An Order</mat-label>
+        <!-- <input (keyup)="searchVal($any($event.target).value)" matInput placeholder="11200" > -->
+        <!-- <input type="text" [formControl]="filter" placeholder="Filter states..."> -->
+        <!-- <input #toTarget (keyup)="searchVal()" [(ngModel)]="searchValue" [ngModelOptions]="{standalone: true}" matInput placeholder="11200" > -->
+        <!-- <input (keyup)="onKeyup()" [(ngModel)]="searchValue" [ngModelOptions]="{standalone: true}" type="text" #search matInput placeholder="search value"> -->
+        <br><br>
+        <input type="text" matInput #searchBox id="search-box" (input)="mySearch(searchBox.value)">
+    </mat-form-field>
+</form>
